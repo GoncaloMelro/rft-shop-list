@@ -1,0 +1,137 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.form-container {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+
+#product-name {
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+button[type="submit"] {
+  font-size: 1rem;
+  background-color: #9d00ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #6e00b3; 
+}
+
+
+.list-group {
+  margin-top: 30px;
+  padding: 0;
+}
+
+#products li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+#products.empty {
+  text-align: center;
+  color: #6c757d;
+}
+
+
+.mb-4 {
+  margin-bottom: 2rem !important;
+}
+
+
+@media (max-width: 576px) {
+  h1 {
+      font-size: 1.75rem;
+  }
+
+  .form-container {
+      padding: 15px;
+  }
+
+  #product-name {
+      font-size: 0.875rem;
+  }
+
+  button[type="submit"] {
+      font-size: 0.875rem;
+      padding: 10px;
+  }
+
+  #products li {
+      font-size: 1rem;
+  }
+
+  .delete-btn {
+      padding: 3px 8px;
+      font-size: 0.875rem;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #9d00ff;
+    border-color: #6e00b3;
+  }
+  
+  input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+}
