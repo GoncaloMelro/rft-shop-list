@@ -4,6 +4,7 @@ const productForm = document.getElementById('product-form');
 const productNameInput = document.getElementById('product-name');
 const productList = document.getElementById('products');
 
+
 async function getProducts() {
   try {
     const response = await fetch(API_URL);
