@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5130/products';
+const API_URL = 'https://rft-shop-list-api-sparkling-meadow-4377.fly.dev/products';
 
 const productForm = document.getElementById('product-form');
 const productNameInput = document.getElementById('product-name');
